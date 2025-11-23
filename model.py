@@ -3,9 +3,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-class MFMC_DTI(nn.Module):
+class MFSC_DTI(nn.Module):
     def __init__(self, hp,protein_MAX_LENGH=1000,drug_MAX_LENGH=100):
-        super(MFMC_DTI, self).__init__()
+        super(MFSC_DTI, self).__init__()
         self.dim = hp.char_dim
         self.conv = hp.conv
         self.drug_MAX_LENGTH = drug_MAX_LENGH
