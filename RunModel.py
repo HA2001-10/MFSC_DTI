@@ -14,7 +14,7 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 from config import hyperparameter
-from model import MFMC_DTI
+from model import MFSC_DTI
 from utils.DataPrepare import get_kfold_data, shuffle_dataset
 from utils.DataSetsFunction import CustomDataSet, collate_fn, save_bert_features, load_bert_features
 from utils.EarlyStoping import EarlyStopping
